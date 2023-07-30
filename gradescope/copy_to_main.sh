@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Set the script to exit immediately if any command fails
+set -e
+
 # Step 1: Checkout the "main" branch
 git checkout main
 
