@@ -60,7 +60,7 @@ Run the following commands:
 
 2. Upload the autograder zip file in `./dist/autograder` to GradeScope.
     
-3. Update the student files to the `main` branch of the repo.  From the base directory of the repo, run the following command:
+3. Update the student files to the `main` branch of the repo. Make sure you've committed and synced your changes, then from the base directory of the repo, run the following command:
 
     `./gradescope/copy_to_main.sh`
 
