@@ -57,18 +57,13 @@ Run the following commands:
 1. Generate the gradescope auto grader and student files into a directory called `dist`:
 
     `otter assign <Jupyter notebook>.ipynb dist` 
-2. Upload the autograder zip file in `./dist/autograder` to GradeScope.
-3. Update the student files to the `main` branch of the repo:
 
-    ``
+2. Upload the autograder zip file in `./dist/autograder` to GradeScope.
+    
+3. Update the student files to the `main` branch of the repo.  From the base directory of the repo, run the following command:
+
+    `./gradescope/copy_to_main.sh`
 
 Note: Don't commit the `dist` directory or anything within it to the 
 `solution`.  You can just delete it.  This way we can avoid the auto-generated
 Otter files from becoming out of sync with the master Jupyter notebook
-
-## What will Gradescope do?
-
-- when you upload gradescope.zip, it will unzip and run `setup.sh`
-- when a student makes an upload, it will run `run_autograder`
-- That runs `run_tests.py`, which finds and runs the tests and formats the output for Gradescope
-- Gradescope uses that output as the scoring for the submission
